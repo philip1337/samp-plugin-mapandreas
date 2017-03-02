@@ -57,6 +57,3 @@ You can also download it manually and place it into the external directory.
     make
 
 - [How to use cmake](https://github.com/bast/cmake-example)
-
-## License
-- [License](LICENSE)
