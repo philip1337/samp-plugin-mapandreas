@@ -1,0 +1,22 @@
+{
+    "user": "philip1337",
+    "repo": "samp-plugin-mapandreas",
+    "include_path": "include",
+    "resources": [
+        {
+            "name": "MapAndreas-win-x86.zip",
+            "platform": "windows",
+            "archive": true,
+            "plugins": ["windows/plugins/mapandreas.dll"]
+        },
+        {
+            "name": "MapAndreas-linux-x86.zip",
+            "platform": "linux",
+            "archive": true
+            "plugins": ["linux/plugins/mapandreas.so"]
+        }
+    ],
+    "runtime": {
+        "plugins": ["philip1337/samp-plugin-mapandreas"]
+    }
+}
