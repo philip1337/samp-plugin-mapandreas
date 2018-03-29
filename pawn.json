@@ -12,7 +12,7 @@
         {
             "name": "MapAndreas-linux-x86.zip",
             "platform": "linux",
-            "archive": true
+            "archive": true,
             "plugins": ["linux/plugins/mapandreas.so"]
         }
     ],
