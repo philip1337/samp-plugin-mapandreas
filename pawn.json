@@ -14,7 +14,7 @@
       "platform": "linux",
       "archive": true,
       "includes": ["linux\\/include"],
-      "plugins": ["linux\\/plugins\\/mysql.so"],
+      "plugins": ["linux\\/plugins\\/mapandreas.so"],
       "files": {
         "linux\\/scriptfiles\\/SAfull.hmap": "scriptfiles/SAfull.hmap",
         "linux\\/scriptfiles\\/SAmin.hmap": "scriptfiles/SAmin.hmap"
@@ -25,7 +25,7 @@
       "platform": "windows",
       "archive": true,
       "includes": ["windows\\/include"],
-      "plugins": ["windows\\/plugins\\/mysql.so"],
+      "plugins": ["windows\\/plugins\\/mapandreas.dll"],
       "files": {
         "windows\\/scriptfiles\\/SAfull.hmap": "scriptfiles/SAfull.hmap",
         "windows\\/scriptfiles\\/SAmin.hmap": "scriptfiles/SAmin.hmap"
