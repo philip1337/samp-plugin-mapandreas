@@ -7,5 +7,29 @@
   "dev_dependencies": ["pawn-lang/YSI-Includes"],
   "runtime": {
     "plugins": ["Southclaws/samp-plugin-mapandreas"]
-  }
+  },
+  "resources": [
+    {
+      "name": "MapAndreas-linux-x86.zip",
+      "platform": "linux",
+      "archive": true,
+      "includes": ["linux\\/include"],
+      "plugins": ["linux\\/plugins\\/mysql.so"],
+      "files": {
+        "linux\\/scriptfiles\\/SAfull.hmap": "scriptfiles/SAfull.hmap",
+        "linux\\/scriptfiles\\/SAmin.hmap": "scriptfiles/SAmin.hmap"
+      }
+    },
+    {
+      "name": "MapAndreas-win-x86.zip",
+      "platform": "windows",
+      "archive": true,
+      "includes": ["windows\\/include"],
+      "plugins": ["windows\\/plugins\\/mysql.so"],
+      "files": {
+        "windows\\/scriptfiles\\/SAfull.hmap": "scriptfiles/SAfull.hmap",
+        "windows\\/scriptfiles\\/SAmin.hmap": "scriptfiles/SAmin.hmap"
+      }
+    }
+  ]
 }
