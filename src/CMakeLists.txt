@@ -1,48 +1,22 @@
 include(AMXConfig)
 include(AddSAMPPlugin)
 
-# Natives
-set(SOURCE_NATIVES
-	natives.cpp
-	natives.h
+set(SAMP_SDK_ROOT "${PROJECT_SOURCE_DIR}/lib/samp-plugin-sdk")
+find_package(SAMPSDK REQUIRED)
+
+include_directories(
+	${SAMPSDK_INCLUDE_DIR}
 )
 
-# Map Andreras
-set(SOURCE_MAPANDREAS
+add_samp_plugin(mapandreas
+	${SAMPSDK_DIR}/amxplugin.cpp
+	${SAMPSDK_DIR}/amxplugin2.cpp
+	${SAMPSDK_DIR}/amx/getch.c
+	common.hpp
+	main.cpp
 	MapAndreas.cpp
-)
-
-set(HEADER_MAPANDREAS
-	MapAndreas.h
-)
-
-# Plugin stuff
-set(SOURCE_PLUGIN_MAPANDREAS
-	plugin.cpp
+	MapAndreas.hpp
+	natives.cpp
+	natives.hpp
 	plugin.def
 )
-
-
-# Plugin
-mapandreas_add_library(mapandreas-lib
-  ${SOURCE_MAPANDREAS}
-  ${HEADER_MAPANDREAS}
-)
-
-# Plugin
-mapandreas_add_library(mapandreas-plugin-lib
-  ${SOURCE_MAPANDREAS}
-  ${HEADER_MAPANDREAS}
-  ${SOURCE_NATIVES}
-)
-
-# Plugin
-if (SAMP_MAPANDREAS_INCLUDE_PLUGIN)
-	mapandreas_add_samp_plugin(mapandreas
-	  ${SOURCE_PLUGIN_MAPANDREAS}
-	  ${SOURCE_MAPANDREAS}
-	  ${HEADER_MAPANDREAS}
-	  ${SOURCE_NATIVES}
-	)
-endif()
-

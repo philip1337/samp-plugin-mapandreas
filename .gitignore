@@ -1,31 +1,50 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+#
+# Package only files
+#
 
-# Precompiled Headers
-*.gch
-*.pch
+# Compiled Bytecode
+*.amx
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Vendor directory for dependencies
+dependencies/
 
-# Fortran module files
-*.mod
-*.smod
+# Dependency versions lockfile
+pawn.lock
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
 
-# Executables
+#
+# Server/gamemode related files
+#
+
+# compiled settings file
+# keep `samp.json` file on version control
+# but make sure the `rcon_password` field is set externally
+# you can use the environment variable `SAMP_RCON_PASSWORD` to do this.
+server.cfg
+
+# Plugins directory
+plugins/
+
+# binaries
 *.exe
-*.out
-*.app
+*.dll
+*.so
+announce
+samp03svr
+samp-npc
 
-external/
+# logs
+logs/
+server_log.txt
+
+#
+# Common files
+#
+
+*.sublime-workspace
+*.sublime-project
+
+build/
+.vs/
+*.so
+*.o
