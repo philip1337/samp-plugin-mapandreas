@@ -2,21 +2,21 @@
 
 [![sampctl](https://shields.southcla.ws/badge/sampctl-mapandreas-2f2f2f.svg?style=for-the-badge)](https://github.com/Southclaws/samp-plugin-mapandreas)
 
-This plugin was initiali made by Kalcor and extended bv Mauzen. It allows you to
-load different height maps and check the min height for x,y coordinates. You can
-us it as example for an anti cheat to detect airbreaks easier or to prevent
+This plugin was initially made by Kalcor and extended by Mauzen. It allows you
+to load different height maps and check the min height for x,y coordinates. You
+can us it as example for an anti cheat to detect airbreaks easier or to prevent
 falling through the ground.
 
 Features:
 
-* Load height map
-* You can also implement it in your sampgdk plugins.
+*   Load height map
+*   You can also implement it in your sampgdk plugins.
 
 Topics:
 
-* [MapAndreas v1.2.1 Updated @ sa-mp.com](http://forum.sa-mp.com/showthread.php?t=275492)
-* [MapAndreas v1.2.1 Updated @ sa-mp.com](http://forum.sa-mp.com/showpost.php?p=3130004&postcount=153)
-* [MapAndreas v1.0 beta @ sa-mp.com](http://forum.sa-mp.com/showthread.php?t=120013)
+*   [MapAndreas v1.2.1 Updated @ sa-mp.com](http://forum.sa-mp.com/showthread.php?t=275492)
+*   [MapAndreas v1.2.1 Updated @ sa-mp.com](http://forum.sa-mp.com/showpost.php?p=3130004&postcount=153)
+*   [MapAndreas v1.0 beta @ sa-mp.com](http://forum.sa-mp.com/showthread.php?t=120013)
 
 ## Installation
 
