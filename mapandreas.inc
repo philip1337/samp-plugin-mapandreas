@@ -20,3 +20,5 @@ native MapAndreas_FindAverageZ(Float:X, Float:Y, &Float:Z);
 native MapAndreas_Unload();
 native MapAndreas_SetZ_For2DCoord(Float:X, Float:Y, Float:Z);
 native MapAndreas_SaveCurrentHMap(name[]);
+
+native MapAndreas_GetAddress(); // Only for plugin usage
