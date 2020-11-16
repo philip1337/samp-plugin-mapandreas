@@ -1,4 +1,7 @@
 # Map Andreas Plugin  #
+
+[![sampctl](https://img.shields.io/badge/sampctl-samp--plugin--mapandreas-2f2f2f.svg?style=for-the-badge)](https://github.com/philip1337/samp-plugin-mapandreas)
+
 This plugin was initiali made by Kalcor and extended bv Mauzen.
 It allows you to load different height maps and check the min height for x,y coordinates.
 You can us it as example for an anti cheat to detect airbreaks easier or to prevent falling through the ground.
@@ -23,6 +26,20 @@ You can us it as example for an anti cheat to detect airbreaks easier or to prev
 |MapAndreas_SetZ_For2DCoord|Float:X, Float:Y, Float:Z|int (0 failed/1 success)|
 
 - [Pawno include file: mapandreas.inc](include/mapandreas.inc)
+
+## Installation
+
+Simply install to your project:
+
+```bash
+sampctl package install philip1337/samp-plugin-mapandreas
+```
+
+Include in your code and begin using the library:
+
+```pawn
+#include <mapandreas>
+```
 
 ### Example
 Initialize MapAndreas and get a position.
