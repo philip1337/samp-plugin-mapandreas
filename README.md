@@ -43,18 +43,17 @@ Include in your code and begin using the library:
 
 ### Example
 Initialize MapAndreas and get a position.
-
-    public OnGameModeInit(playerid, cmdtext[])
-    {
-        MapAndreas_Init(MAP_ANDREAS_MODE_FULL, "scriptfiles/SAFull.hmap");
-        new Float:pos;
-        if (MapAndreas_FindAverageZ(20.001, 25.006, pos)) {
-            // Found position - position saved in 'pos'
-        }
-        return 0;
+```pawn
+public OnGameModeInit()
+{
+    MapAndreas_Init(MAP_ANDREAS_MODE_FULL, "scriptfiles/SAFull.hmap");
+    new Float:pos;
+    if (MapAndreas_FindAverageZ(20.001, 25.006, pos)) {
+        // Found position - position saved in 'pos'
     }
-    
-    
+    return 0;
+}
+```
 ## Build
 #### Requirements
 - [Modified version of gclient](https://github.com/timniederhausen/gclient)
